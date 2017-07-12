@@ -32,6 +32,8 @@ Back to that container with shell
 docker container start -ai ubuntu
 ```
 
+running something on the running container
+
 ```
 docker container exec -it mysql bash
 ps aux
