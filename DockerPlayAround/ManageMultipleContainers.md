@@ -1,4 +1,4 @@
-#Practice
+## Practice
 
 Run a nginx, a mysql and a httpd(apache) server
 
@@ -14,16 +14,16 @@ Clean it all up with docker container stop and docker container rm
 
 Use docker container ls to check the result
 
-#Cheat Sheet
+## Cheat Sheet
 
-First part, to create containers:
+### First part, to create containers:
 
 
 ```
 docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD =yes mysql
 ```
 
-To get the password
+### To get the password
 
 ```
 docker container logs db
@@ -41,7 +41,7 @@ docker container run -d --name proxy -p 80:80 nginx
 docker container ls
 ```
 
-Second part, to remove all containers
+### Second part, to remove all containers
 
 ```
 docker container stop ID ID ID
